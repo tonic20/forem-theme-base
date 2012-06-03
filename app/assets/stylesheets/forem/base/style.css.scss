@@ -1,12 +1,5 @@
 @import "variables";
 
-body{
-  font-family: GillSans, Calibri, Trebuchet, sans-serif;
-  color: $default-text;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
 #forums {
   .title {
     font-size: 175%;
@@ -71,7 +64,6 @@ body{
 }
 
 #posts{
-  
   .even{
     background-color: $light-bg1;
   }
@@ -210,13 +202,14 @@ table.subdued{
 .lock.icon{
   width: 24px;
   height: 24px;
-  background: transparent url(<%= asset_path('forem/lock_icon.png') %>) 0 0;
+  background: transparent image-url('forem/lock_icon.png') 0 0;
   display: inline-block;
 }
 
 .pin.icon{
   width: 9px;
   height: 15px;
-  background: transparent url(<%= asset_path('forem/pin_icon.png') %>) 0 0;
+  background: transparent image-url('forem/pin_icon.png') 0 0;
   display: inline-block;
 }
+
